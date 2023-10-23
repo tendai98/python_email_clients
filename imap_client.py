@@ -2,11 +2,11 @@ from imaplib import IMAP4_SSL
 
 emails = []
 
-EMAIL_ADDR = 'projectsiot9@gmail.com'	# Stores target email address
-EMAIL_PASS = 'ifwa kuog kjjy pfxe'	# Stores password to email address (Gmails requires unique App password for this email client script)
-IMAP_ADDR = 'imap.gmail.com'		# Adress of IMAP server
+EMAIL_ADDR = 'myemail@domain.com'	# Stores target email address
+EMAIL_PASS = 'password'	# Stores password to email address (Gmails requires unique App password for this email client script)
+IMAP_ADDR = 'imap.domain.com'		# Adress of IMAP server
 
-SOURCE_EMAIL_ADDR = 'team@m.ngrok.com'	# Target source email we want to use for search
+SOURCE_EMAIL_ADDR = 'source@domain.com'	# Target source email we want to use for search
 
 mail_client = IMAP4_SSL(IMAP_ADDR)	# Connect to the IMAP Server
 mail_client.login(EMAIL_ADDR, EMAIL_PASS)	# Authenticate with the IMAP Server
